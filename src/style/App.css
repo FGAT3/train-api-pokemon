@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+:root {
+  /* Colors */
+  --primary-color: #f4f6fc;
+  --secondary-color: #090a0e;
+  --primary-color-rgb: 244, 246, 252;
+  --secondary-color-rgb: 9, 10, 14;
+  --bg-gradient: linear-gradient(to top right, #3427a9, #bd419c);
+
+  /* Fonts */
+  --font-title: "Quicksand", "Poppins", sans-serif;
+  --font-content: "Roboto", "Rubik", sans-serif;
+
+  /* Font sizes */
+  --logo-mobile: 1.8rem;
+  --logo-desktop: 2.125rem;
+  --placeholder-mobile: 0.8rem;
+  --placeholder-desktop: 1.25rem;
+  --title-mobile: 1rem;
+  --title-desktop: 1.5rem;
+  --primary-content-mobile: 0.875rem;
+  --primary-content-desktop: 1.125rem;
+  --secondary-content-mobile: 0.75rem;
+  --secondary-content-desktop: 1rem;
+  --artist-name-mobile: 1.25rem;
+  --artist-name-desktop: 1.875rem;
+  --artist-desc-mobile: 0.75rem;
+  --artist-desc-desktop: 1rem;
+  --album-artist-name-mobile: 1.125rem;
+  --album-artist-name-desktop: 1.5rem;
+
+  /* Font weights */
+
+  --medium: 500;
+  --semi-bold: 600;
+  --bold: 700;
+
+  /* Other font style */
+  --font-stroke: -0.025rem -0.025rem var(--secondary-color),
+    0.025rem -0.025rem var(--secondary-color),
+    -0.025rem 0.025rem var(--secondary-color),
+    0.025rem 0.025rem var(--secondary-color),
+    0.05rem 0.05rem var(--secondary-color);
+
+  /* Images & cards */
+  --opacity-card: 0.5;
+  --outside-shadow: 0 0.25rem 0.25rem 0 rgba(var(--secondary-color-rgb), 0.25);
+  --inner-shadow: rgba(var(--secondary-color-rgb), 0.2) 0 0.25rem 0.25rem 0
+    inset;
+  --rounded: 1.25rem;
+  --bg-mobile-card-width: 11.875rem;
+  --bg-mobile-card-height: 6.25rem;
+  --bg-desktop-card-width: 17.5rem;
+  --bg-desktop-card-height: 9.375rem;
+  --img-mobile-card: 5rem;
+  --img-desktop-card: 7rem;
+  --border-card: 0.063rem;
+  --border-img-card: 0.031rem;
+  --border-artist-mobile: 0.125rem;
+  --border-artist-desktop: 0.25rem;
+  --width-artist-mobile: 9.375rem;
+  --height-artist-mobile: 7rem;
+  --width-artist-desktop: 21.875rem;
+  --height-artist-desktop: 16.438rem;
+  --album-mobile-card: 5.625rem;
+  --album-desktop-card: 11.25rem;
+  --shuffle-album-mobile: 6.875rem;
+  --shuffle-album-desktop: 15rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+}
+
+h1 {
+  color: red;
+}
