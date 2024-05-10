@@ -1,6 +1,6 @@
-const fetchPokemonList = async () => {
+const fetchPokemonData = async (url) => {
   try {
-    const response = await fetch("https://pokeapi.co/api/v2/pokemon");
+    const response = await fetch(url);
     if (!response.ok) {
       throw new Error("Failed to fetch Pokémon data");
     }
@@ -11,4 +11,4 @@ const fetchPokemonList = async () => {
   }
 };
 
-export default fetchPokemonList;
+export default fetchPokemonData;

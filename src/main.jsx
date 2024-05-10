@@ -3,17 +3,18 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import App from "./App.jsx";
 import HomePage from "./pages/HomePage.jsx";
 import React from "react";
-import fetchPokemonList from "./script/fetchPokemonList.jsx";
-import fetchPokemonDetails from "./script/fetchPokemonDetails.jsx";
+import fetchPokemonData from "./script/fetchPokemonData.jsx";
 
 const router = createBrowserRouter([
   {
     element: <App />,
     loader: async () => {
-      const pokemonList = await fetchPokemonList();
+      const pokemonList = await fetchPokemonData(
+        "https://pokeapi.co/api/v2/pokemon"
+      );
       const pokemonUrls = pokemonList.results.map((pokemon) => pokemon.url);
       const pokemonDetails = await Promise.all(
-        pokemonUrls.map(fetchPokemonDetails),
+        pokemonUrls.map(fetchPokemonData)
       );
 
       return { pokemonList, pokemonDetails };
@@ -24,7 +25,7 @@ const router = createBrowserRouter([
         path: "/",
         element: <HomePage />,
       },
-      // ...
+      // ...maybe or maybe not
     ],
   },
 ]);
@@ -34,5 +35,5 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <RouterProvider router={router} />
-  </React.StrictMode>,
+  </React.StrictMode>
 );
